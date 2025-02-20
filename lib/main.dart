@@ -5,6 +5,8 @@ void main() {
 }
 
 class WeatherApp extends StatelessWidget {
+  const WeatherApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,6 +17,8 @@ class WeatherApp extends StatelessWidget {
 }
 
 class WeatherScreen extends StatelessWidget {
+  const WeatherScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +79,7 @@ class WeatherCard extends StatelessWidget {
   final IconData icon;
   final bool isHighlighted;
 
-  WeatherCard({
+  const WeatherCard({super.key, 
     required this.location,
     required this.condition,
     required this.temperature,
